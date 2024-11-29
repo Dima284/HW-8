@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <style>
+        /* Кольори для кожного дня */
+        .monday li { background: pink; }
+        .tuesday li { background: lightblue; }
+        .wednesday li { background: lightgreen; }
+        .thursday li { background: peachpuff; }
+        .friday li { background: violet; }
+
+        /* Ефекти для елементів */
+        li:hover { transform: scale(1.1); }
+        li:active { background: red; }
+        li:first-child { font-weight: bold; text-decoration: underline; }
+        li:last-child { border-bottom: 2px solid black; }
+        li:nth-child(odd) { color: gray; }
+
+        /* Додаткові стилі */
+        h3:first-of-type { color: pink; }
+        #greycol { color: gray; }
+        .text-box div > p { color: red; }
+        p:nth-child(5) { color: green; }
+        .yellow { color: yellow; }
+    </style>
 </head>
 <body>
     <div class="schedule">
         <div class="monday">
-            <h2>Понедінок</h2>
+            <h2>Понеділок</h2>
             <ul>
                 <li>Урок 1: Математика</li>
                 <li>Урок 2: Фізика</li>
@@ -22,47 +43,57 @@
         <div class="tuesday">
             <h2>Вівторок</h2>
             <ul>
-          <li>Урок 1: Історія</li>
-          <li>Урок 2: Інформатика</li>
-          <li>Урок 3: Англійська</li>
-          <li>Урок 4: Математика</li>
-          <li>Урок 5: Хімія</li>
-          <li>Урок 6: Фізкультура</li>
-        </ul>
-    </div>
+                <li>Урок 1: Історія</li>
+                <li>Урок 2: Інформатика</li>
+                <li>Урок 3: Англійська</li>
+                <li>Урок 4: Математика</li>
+                <li>Урок 5: Хімія</li>
+                <li>Урок 6: Фізкультура</li>
+            </ul>
+        </div>
         <div class="wednesday">
             <h2>Середа</h2>
             <ul>
-          <li>Урок 1: Географія</li>
-          <li>Урок 2: Фізика</li>
-          <li>Урок 3: Література</li>
-          <li>Урок 4: Англійська</li>
-          <li>Урок 5: Біологія</li>
-          <li>Урок 6: Математика</li>
-        </ul>
-    </div>
+                <li>Урок 1: Географія</li>
+                <li>Урок 2: Фізика</li>
+                <li>Урок 3: Література</li>
+                <li>Урок 4: Англійська</li>
+                <li>Урок 5: Біологія</li>
+                <li>Урок 6: Математика</li>
+            </ul>
+        </div>
         <div class="thursday">
-            <h2>Четверг</h2>
+            <h2>Четвер</h2>
             <ul>
-          <li>Урок 1: Хімія</li>
-          <li>Урок 2: Історія</li>
-          <li>Урок 3: Інформатика</li>
-          <li>Урок 4: Географія</li>
-          <li>Урок 5: Література</li>
-          <li>Урок 6: Фізика</li>
-        </ul>
-    </div>
+                <li>Урок 1: Хімія</li>
+                <li>Урок 2: Історія</li>
+                <li>Урок 3: Інформатика</li>
+                <li>Урок 4: Географія</li>
+                <li>Урок 5: Література</li>
+                <li>Урок 6: Фізика</li>
+            </ul>
+        </div>
         <div class="friday">
-            <h2>Пятница</h2>
+            <h2>П'ятниця</h2>
             <ul>
-          <li>Урок 1: Біологія</li>
-          <li>Урок 2: Фізкультура</li>
-          <li>Урок 3: Англійська</li>
-          <li>Урок 4: Інформатика</li>
-          <li>Урок 5: Хімія</li>
-          <li>Урок 6: Історія</li>
-        </ul>
+                <li>Урок 1: Біологія</li>
+                <li>Урок 2: Фізкультура</li>
+                <li>Урок 3: Англійська</li>
+                <li>Урок 4: Інформатика</li>
+                <li>Урок 5: Хімія</li>
+                <li>Урок 6: Історія</li>
+            </ul>
+        </div>
     </div>
-      </div>
+    <div class="text-box">
+        <h3>Пофарбуйте мене в рожевий колір (color: pink).</h3>
+        <p>Даний елемент має залишитись неоформленим.</p>
+        <p id="greycol">Пофарбуйте мене в сірий колір (color: grey).</p>
+        <div>Даний елемент має залишитись неоформленим.</div>
+        <div><p>Пофарбуйте мене в червоний колір (color: red).</p></div>
+        <h3>Даний елемент має залишитись неоформленим.</h3>
+        <p>Пофарбуйте мене в зелений колір (color: green).</p>
+        <p class="yellow">Пофарбуйте мене в жовтий колір (color: yellow).</p>
+    </div>
 </body>
 </html>
