@@ -1,22 +1,18 @@
-<style>
-        /* Кольори для кожного дня */
-        .monday li { background: pink; }
-        .tuesday li { background: lightblue; }
-        .wednesday li { background: lightgreen; }
-        .thursday li { background: peachpuff; }
-        .friday li { background: violet; }
-
-        /* Ефекти для елементів */
-        li:hover { transform: scale(1.1); }
-        li:active { background: red; }
-        li:first-child { font-weight: bold; text-decoration: underline; }
-        li:last-child { border-bottom: 2px solid black; }
-        li:nth-child(odd) { color: gray; }
-
-        /* Додаткові стилі */
-        h3:first-of-type { color: pink; }
-        #greycol { color: gray; }
-        .text-box div > p { color: red; }
-        p:nth-child(5) { color: green; }
-        .yellow { color: yellow; }
-    </style>
+h3:first-child{
+    color: pink;
+}
+#greycol{
+    color: grey;
+}
+/* div > div > p{
+    color: red;
+} */
+p:nth-child(7){
+    color: green;
+}
+.yellow{
+    color: yellow;
+}
+div:nth-child(5) p{
+    color: red;
+}
